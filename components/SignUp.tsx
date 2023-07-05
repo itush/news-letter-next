@@ -1,15 +1,21 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import check from "../public/images/icon-list.svg"
-import illusMob from "../public/images/illustration-sign-up-mobile.svg"
+import check from "../public/images/icon-list.svg";
+import illusMob from "../public/images/illustration-sign-up-mobile.svg";
+import illusDesk from "../public/images/illustration-sign-up-desktop.svg"
 
 export default function SignUp() {
     return (
-        <main>
-            <Image src={illusMob} alt='illusMob' className='min-w-full'/>
+        <main className='bg-White md:px-4 md:py-2 md:max-w-[80%] md:max-h[60%] md:flex md:m-auto
+                            md:flex-row-reverse md:gap-2 md:rounded-xl'>
+            <Image src={illusMob} alt='illusMob' className='min-w-full md:hidden'/>
+
+            <Image src={illusDesk} alt='illusDesk' className=' hidden md:block md:w-[50%]'/>
             
-            <article className="description p-4">
+            <article className="description p-2 md:w-[50%] md:flex md:flex-col md:justify-center">
+
+
                 <h1 className='text-2xl font-bold my-4 text-DarkSlateGrey'>Stay updated!</h1>
 
                 <p className='my-4 text-CharcoalGrey'>
