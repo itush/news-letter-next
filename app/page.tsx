@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <SignUp />
-      <h1>Home</h1>
+      
     </main>
   )
 }
