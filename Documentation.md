@@ -1,5 +1,5 @@
 # Why don't we directly access an input element and get its value in React?
--  In vanilla JavaScript, we can indeed use 
+In vanilla JavaScript, we can indeed use 
 `const emailInput = document.getElementById('email');`
 `const email = emailInput.value.trim();`
  to directly access an input element and get its value using .value.trim().
