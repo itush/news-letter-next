@@ -47,7 +47,7 @@ export default function SignUp() {
 
     return (
         <main className='bg-White md:px-4 md:py-2 md:max-w-[80%] md:max-h[60%] md:flex md:m-auto md:flex-row-reverse md:gap-2 md:rounded-xl'>
-            
+
             {!isEmailValid ? (
 
                 <>
@@ -104,7 +104,7 @@ export default function SignUp() {
 
 
             ): (
-                    <Success />
+                    <Success email={email} />
                                 )}
         </main>
     )
